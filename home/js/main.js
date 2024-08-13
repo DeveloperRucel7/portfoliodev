@@ -550,3 +550,12 @@
     zyan.preloader();
   });
 })(jQuery);
+
+
+
+//translate page
+
+//add this to your header -->
+//<div id="google_translate_element"></div> 
+
+//<!-- to your js part -->
