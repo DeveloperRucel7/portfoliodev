@@ -106,7 +106,7 @@ function sendEmail(){
         Password : "69BCDB9D996087140BEEA8394D57632D8948",
         To : 'petitdassi7@gmail.com',
         From : 'cybercorps237@gmail.com',
-        Subject : `CONTACT  ${user_name} FROM PORTFOLIO`,
+        Subject : `CONTACT FROM PORTFOLIO`,
         Body : contain_mail
     }).then(
       message => {
