@@ -44,17 +44,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav m-auto">
             <li class="nav-item">
-              <a class="nav-link text_hover_animaiton" href="#">Home</a>
+              <a class="nav-link text_hover_animaiton" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text_hover_animaiton" href="#about">about us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text_hover_animaiton" href="#service">services</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link text_hover_animaiton" href="#">Projects </a>
-            </li> -->
             
             <li class="nav-item">
               <a
@@ -62,59 +53,9 @@
                 href="contact.html">contact</a>
             </li>
           </ul>
-          <span
-            class="toggle_icon c-pointer"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-            ><i
-              class="fa-sharp fa-sharp fa-regular fa-bars bar_icon-staggered"
-            ></i
-          ></span>
         </div>
       </div>
-    </nav>
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
-      <div class="offcanvas-header">
-        <a class="offcanvas-logo" href="index.html">
-          <img src="images/logo.jpg" alt="rucel dev" class="img-fluid w-100" />
-        </a>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        >
-          <i class="fa-regular fa-xmark"></i>
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="tf__design_form offcanvas_form">
-          <div class="offcanvas-content-box">
-            <h4 class="offcanvas_title">About us</h4>
-            <p>
-              Hello, i am rucel web deloper. I am very passionate with ethical hacking and artificial Intelligence. i can teach programming!!!
-              
-            </p>
-          </div>
-          <div class="offcanvas_contact_form">
-            <h4 class="offcanvas_title">Get In Touch</h4>
-            <form action="#">
-              <input
-                type="text"
-                placeholder="Your Name"
-                aria-autocomplete="list"
-              />
-              <input type="email" placeholder="Your Email" />
-              <textarea rows="4" placeholder="Message"></textarea>
-              <button type="submit" class="common_btn">Submit Now</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-   
+    </nav>  
     <section
       class="tf__breadcrumb banner"
       style="background: url(images/bg/breadcrumb.jpg)"
@@ -154,25 +95,28 @@
         <div class="row">
           <div class="col-xl-7 col-lg-7">
             <div class="tf__contact_form_area">
-              <form action="#">
+              <form id="contactForm">
                 <div class="row">
                   <div class="col-xl-6">
-                    <input type="text" placeholder="Your Name*" />
+                    <input type="text" placeholder="Your Name*" id="name" />
+                    <p class="error_name" style="display: none;">please enter your full name</p>
                   </div>
                   <div class="col-xl-6">
-                    <input type="email" placeholder="Your Email*" />
+                    <input type="text" placeholder="Your Email*" id="email"/>
+                    <p class="error_email" style="display: none;">Please enter a valid email</p>
                   </div>
                   <div class="col-xl-6">
-                    <input type="text" placeholder="Phone Number*" />
+                    <input type="text" placeholder="Phone Number*" id="phone" />
+                    <p class="error_phone" style="display: none;">please enter your phonenumber eg:+237656435323</p>
                   </div>
-                  <div class="col-xl-6">
-                    <input type="text" placeholder="Your Website*" />
-                  </div>
+                 
                   <div class="col-xl-12">
                     <textarea
                       rows="7"
-                      placeholder="Write Your Message Here*"
+                      placeholder="Write Your Message Here* you can include your website"
+                      id="message"
                     ></textarea>
+                    <p class="error_mess" style="display: none;">enter your message</p>
                     <button class="common_btn" type="submit">Send Mail</button>
                   </div>
                 </div>
@@ -338,6 +282,9 @@
     <script src="js/animation.js"></script>
     <!--main/custom js-->
     <script src="js/main.js"></script>
+    <script src="js/submit_contact.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 
 

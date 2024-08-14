@@ -293,9 +293,14 @@
               </p>
               <form id="contactForm">
                 <input class="" type="text" placeholder="Your Name" id="name" />
-                <input class="" type="email" placeholder="Your Email" id="email" />
+                <p class="error_name" style="display: none;">please enter your full name</p>
+                <input class="" type="text" placeholder="Your Email" id="email" />
+                <p class="error_email" style="display: none;">please enter your email adress</p>
+                <p class="error_valid" style="display: none;">please enter a valid email adress</p>
                 <input class="" type="text" placeholder="Phone Number" id="phone" />
+                <p class="error_phone" style="display: none;">please enter your phonenumber eg:+237656435323</p>
                 <textarea class="" rows="4" placeholder="Message" id="message"></textarea>
+                <p class="error_mess" style="display: none;">please enter your message</p>
                 <button type="submit" class="common_btn" >Submit Now</button>
               </form>
             </div>
@@ -780,7 +785,9 @@
     <script src="js/animation.js"></script>
     <!--main/custom js-->
     <script src="js/main.js"></script>
-
+    <script src="js/submit_contact.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
  
   </body>
 
