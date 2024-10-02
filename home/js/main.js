@@ -15,7 +15,7 @@
       : false;
 
   var zyan = {
-    /* ZYAN init */
+ 
     init() {
       zyan.imgToSvg(),
         zyan.mobileMenu(),

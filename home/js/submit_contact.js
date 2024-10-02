@@ -121,7 +121,7 @@ function sendEmail(){
             swal({
                 title: "Oooops",
                 text: "problem occur",
-                icon: "dander",
+                icon: "danger",
                 button: "Ok",
               });
         }
